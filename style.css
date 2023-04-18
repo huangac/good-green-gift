@@ -1,0 +1,105 @@
+body {
+    font-family: ibm-plex-mono, sans-serif;
+    margin-top: 92px;
+}
+
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32pt;
+}
+h3 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+#nav {
+    position: fixed;
+    height: 92px;
+    top: 0; left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    border-bottom: 0.25px solid rgb(85, 85, 85);
+}
+#nav * {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nav li {
+    display: inline-block;
+    padding-right: 10px;
+}
+#nav a {
+    display: flex;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+}
+#hero-text {
+    max-width: 600px;
+    margin-top: 150px;
+}
+#hero-text p {
+    font-size: 24pt;
+}
+#hero-img {
+    width: 400px;
+}
+#shop-button {
+    border: 1px solid black;
+    padding: 30px;
+    width: 70px;
+
+}
+#sections {
+    position: absolute;
+    top: 650px;
+    left: 0px;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    background-color: #ECECE4;
+}
+#our-team {
+    margin: 128px auto 0px auto;
+    max-width: 1000px;
+}
+.all-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team-member {
+    display: flex;
+    width: 450px;
+    margin: 10px 0px;
+    
+}
+.pfp {
+    width: 150px;
+}
+.bio {
+    padding-left: 20px;
+}
+#web-team {
+    margin: 128px auto 0px auto;
+    max-width: 1000px;
+}
