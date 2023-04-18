@@ -9,10 +9,17 @@ h1 {
     font-weight: 600;
     font-size: 32pt;
 }
+h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24pt;
+}
 h3 {
     font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: 500;
+    line-height:0;
 }
 
 #nav {
@@ -78,13 +85,15 @@ h3 {
     z-index: -1;
     background-color: #ECECE4;
 }
-#our-team {
+.team {
     margin: 128px auto 0px auto;
     max-width: 1000px;
+    
+}
+.team-container {
+    display: flex;
 }
 .all-members {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .team-member {
@@ -93,11 +102,24 @@ h3 {
     margin: 10px 0px;
     
 }
-.pfp {
-    width: 150px;
+#our-team-main {
+    width: 400px;
 }
+#web-team-main {
+    width: 400px;
+}
+.our-pfp {
+    width: 100px;
+    height: 100px;
+}
+.web-pfp {
+    width: 100px;
+    height: 100px;
+}
+
 .bio {
     padding-left: 20px;
+
 }
 #web-team {
     margin: 128px auto 0px auto;
