@@ -3,6 +3,27 @@
         <title>About</title>
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/cry7abk.css">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".our-pfp").css("opacity", "0.8");
+                $(".our-pfp").on("mouseover", function() {
+                    $(this).css("opacity", "1");
+                })
+                $(".our-pfp").on("mouseout", function() {
+                    $(this).css("opacity", "0.8");
+                })
+                $(".our-pfp").on("click", function(){
+                    $("#our-team-main").hide()
+                    temp = $(this).attr("caption");
+                    $("#our-team-caption").html(temp).fadeIn();
+
+                    temp = $(this).attr("src");
+                    $("#our-team-main").attr("src", temp).fadeIn();
+                });
+            }); 
+            
+        </script>
     </head>
     <body>
         <div id="nav">
@@ -15,87 +36,100 @@
                 <li><a href="shop.html">SHOP</a></li>
             </ul>
         </div>
-        <div id="our-team">
+        <div class="team">
             <h1>Our Team</h1>
-            <div class="all-members">
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Kaylie Li</h3>
-                        <span>bio roles etc</span>
+            <div class="team-container">
+                <div id="our-team-thumb">
+                    <div class="all-members">
+                        <div class="team-member">
+                            <img src="assets/about/kaylie.jpg" class="our-pfp" caption="kaylie bio">
+                            <div class="bio">
+                                <h3>Kaylie Li</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/tiana.jpg" class="our-pfp" caption="tiana bio">
+                            <div class="bio">
+                                <h3>Tiana Day</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/dom.jpg" class="our-pfp" caption="dom bio">
+                            <div class="bio">
+                                <h3>Dom Jocas</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/diora.jpg" class="our-pfp" caption="diora bio">
+                            <div class="bio">
+                                <h3>Diora Juraboeva</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/bj.jpg" class="our-pfp" caption="bj bio">
+                            <div class="bio">
+                                <h3>BJ Moon</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="assets/about/tiana.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Tiana Day</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Kaylie Li</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Kaylie Li</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Kaylie Li</h3>
-                        <span>bio roles etc</span>
-                    </div>
+                <div>
+                    <img src="assets/about/kaylie.jpg" id="our-team-main">
+                    <p id="our-team-caption">kaylie bio</p>
                 </div>
             </div>
-            
         </div>
-        <div id="web-team">
+        <div class="team">
             <h1>Web Team</h1>
-            <div class="all-members">
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Dezin Delgatty</h3>
-                        <span>bio roles etc</span>
+            <div class="team-container">
+                <div id="web-team-thumb">
+                    <div class="all-members">
+                        <div class="team-member">
+                            <img src="assets/about/dezin.jpg" class="web-pfp" >
+                            <div class="bio">
+                                <h3>Dezin Delgatty</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/henry.jpg" class="web-pfp" >
+                            <div class="bio">
+                                <h3>Henry Groome</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/allison.jpg" class="web-pfp" >
+                            <div class="bio">
+                                <h3>Allison Huang</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/shailee.jpg" class="web-pfp" >
+                            <div class="bio">
+                                <h3>Shailee Sankhala</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="assets/about/jaq.jpg" class="web-pfp" >
+                            <div class="bio">
+                                <h3>Jaqueline Sung</h3>
+                                <span>bio roles etc</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <img src="assets/about/henry.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Henry Groome</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/allison.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Allison Huang</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/shailee.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Shailee Sankhala</h3>
-                        <span>bio roles etc</span>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <img src="assets/about/kaylie.jpg" class="pfp">
-                    <div class="bio">
-                        <h3>Jaqueline Sung</h3>
-                        <span>bio roles etc</span>
-                    </div>
+                <div>
+                    <h2>Assignment Breakdown</h2>
                 </div>
             </div>
-            
         </div>
     </body>
 
