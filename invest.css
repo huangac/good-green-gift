@@ -1,0 +1,62 @@
+
+#mission {
+
+    max-width: 800px;
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+#team {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+#teamcaption {
+    max-width: 500px;
+  
+    padding: 40px ;
+    padding-top: 0px;
+}
+#teamimgplaceholder {
+    width: 400px;
+    height: 300px;
+    background-color: beige;
+}
+#product {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#productcaption {
+    max-width: 500px;
+  
+    padding: 40px ;
+    padding-top: 0px;
+}
+#business {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+#timeline {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+#timeline li::marker {
+    content: url("assets/leaf.svg");
+}
+#timeline li {
+    padding-inline-start: 1ch;
+}
+
