@@ -1,0 +1,22 @@
+
+#business {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+#timeline {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+#timeline li::marker {
+    content: url("assets/leaf.svg");
+}
+#timeline li {
+    padding-inline-start: 1ch;
+}
