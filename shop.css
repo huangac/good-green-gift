@@ -73,6 +73,9 @@
 #cancel-cart-button {
     margin-right: 10px;
 }
+#cancel-cart-button:hover {
+    background-color: #c2c2c2
+}
 #checkout-button {
     background-color: #224229;
     color: white;
