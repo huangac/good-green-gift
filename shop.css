@@ -7,7 +7,9 @@
 #shop-info {
     margin: 0px 0px 0px 30px;
 }
-
+#product-image {
+    width: 400px;
+}
 .shop-button {
     width: 100%;
     height: 60px;
@@ -92,4 +94,24 @@
 }
 #remove-button:hover {
     font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    #shop-container {
+        display: block;
+        width: 600px;
+    }
+    #product-image {
+        width: 600px;
+    }
+    #shop-info {
+        margin: 0px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #shop-container {
+        max-width: 400px;
+    }
+    #product-image {
+        max-width: 400px;
+    }
 }

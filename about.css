@@ -38,3 +38,17 @@
     margin: 128px auto 0px auto;
     max-width: 1000px;
 }
+
+@media screen and (max-width: 1000px) {
+    .team {
+        max-width: 600px;
+    }
+    .team-container {
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .team {
+        max-width: 400px;
+    }
+}
