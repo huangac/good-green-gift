@@ -42,17 +42,30 @@ function toggleStylesheet() {
         $("#color-mode-stylesheet").attr("href", "style-dark.css");
         $("#shop-color-mode-stylesheet").attr("href", "shop-dark.css");
         $("#color-mode").html("Shop in light mode");
+        localStorage.setItem("color-mode", "dark");
     } else if (currentStylesheet == "shop-dark.css") {
         $("#color-mode-stylesheet").attr("href", "style-light.css");
         $("#shop-color-mode-stylesheet").attr("href", "shop-light.css");
         $("#color-mode").html("Shop in dark mode");
+        localStorage.setItem("color-mode", "light");
     }
+    
     console.log($("#color-mode-stylesheet").attr("href"));
 
 }
 
 $(document).ready(function() {
-    console.log($("#shop-color-mode-stylesheet").attr("href"));
+    console.log(localStorage.getItem("color-mode"));
+    if (localStorage.getItem("color-mode") == "light") {
+        $("#color-mode-stylesheet").attr("href", "style-light.css");
+        $("#shop-color-mode-stylesheet").attr("href", "shop-light.css");
+        $("#color-mode").html("Shop in dark mode");
+    } else if (localStorage.getItem("color-mode") == "dark") {
+        $("#color-mode-stylesheet").attr("href", "style-dark.css");
+        $("#shop-color-mode-stylesheet").attr("href", "shop-dark.css");
+        $("#color-mode").html("Shop in light mode");
+    }
+
     $("#color-mode").on("click", function() {
         toggleStylesheet();
     })

@@ -6,6 +6,7 @@
     border: solid 1px black;
     border-radius: 20px;
     background-color: white;
+    z-index: 500;
 }
 #color-mode:hover {
     background-color: rgb(42, 42, 42);

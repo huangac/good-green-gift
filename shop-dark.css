@@ -7,6 +7,7 @@
     border-radius: 20px;
     color: white;
     background-color: rgb(26, 26, 26);
+    z-index: 500;
 }
 #color-mode:hover {
     background-color: white;
