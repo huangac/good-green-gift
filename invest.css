@@ -41,5 +41,26 @@
    margin: auto;
    
 }
+.vl {
+    border-left: 2px solid black;
+    position: absolute;
+    margin-top: 30px;
+    margin-left:20px;
+    height:143px;
+    z-index: 1;
+  }
+  #phaseone{
+    z-index: 2;
+  }
+  #phasetwo{
+    z-index: 2;
+  }
+  .point{
+
+  }
+  .more{
+
+  }
+
 
 
