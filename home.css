@@ -19,13 +19,24 @@
     border: 1px solid black;
     padding: 30px;
     width: 70px;
-
+    border-radius: 50px;
 }
 #learn-button {
     border: 1px solid black;
     padding: 30px;
     width: 130px;
+    float: right;
+    border-radius: 50px;
+    
 }
+#learn-button1 {
+    border: 1px solid black;
+    padding: 30px;
+    width: 130px;
+    border-radius: 50px;
+    
+}
+
 #sections {
     position: absolute;
     top: 650px;
@@ -73,4 +84,81 @@
   
     padding: 40px ;
     padding-top: 0px;
+}
+#market {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+#marketsize{
+    width: 300%;
+    margin: 10px;
+    justify-content: center;
+}
+#bigmarket{
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: end center;
+    margin: 20px;
+
+    aspect-ratio: 1 / 1 ;
+    width: 100%;
+    position: relative;
+
+    border-radius: 50%;
+    background-color: rgb(241, 255, 238);
+
+}
+#bigmarket:hover{
+    opacity: 1;
+}
+#medmarket{
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-items: end center;
+    aspect-ratio: 1 / 1 ;
+    width: 80%;
+    position: absolute;
+
+    border-radius: 50%;
+    background-color: rgb(185, 255, 201);
+
+}
+#medmarket:hover{
+    opacity: 1;
+}
+#smallmarket{
+    aspect-ratio: 1 / 1 ;
+    width: 60%;
+    position: absolute;
+
+    border-radius: 50%;
+    background-color: rgb(128, 255, 128);
+
+}
+#smallmarket:hover{
+    opacity: 1;
+}
+#marketcaption {
+    max-width: 600px;
+  
+    padding: 40px ;
+    padding-top: 0px;
+    justify-content: right;
+}
+
+
+#invest {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+    
+}
+a{
+    color: black;
+    text-decoration: none;
 }
