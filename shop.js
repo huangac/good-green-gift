@@ -36,7 +36,25 @@ function closeCart() {
     $("#cart-container").css("z-index", -1);
 }
 
+function toggleStylesheet() {
+    var currentStylesheet = $("#color-mode-stylesheet").attr("href");
+    if (currentStylesheet == "shop-light.css") {
+        $("#color-mode-stylesheet").attr("href", "shop-dark.css");
+        $("#color-mode").html("Shop in light mode");
+    } else if (currentStylesheet == "shop-dark.css") {
+        $("#color-mode-stylesheet").attr("href", "shop-light.css");
+        $("#color-mode").html("Shop in light mode");
+    }
+    console.log($("#color-mode-stylesheet").attr("href"));
+
+}
+
 $(document).ready(function() {
+    console.log($("#color-mode-stylesheet").attr("href"));
+    $("#color-mode").on("click", function() {
+        toggleStylesheet();
+    })
+
     console.log(localStorage.getItem("cartQty"));
     if (localStorage.getItem("cartQty") > 0) {
         cartQty = localStorage.getItem("cartQty");

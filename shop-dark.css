@@ -1,5 +1,19 @@
-
+#color-mode {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px 30px;
+    border: solid 1px white;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(42, 42, 42);
+}
+#color-mode:hover {
+    background-color: white;
+    color: black;
+}
 #shop-container {
+    background-color:rgb(42, 42, 42);
     display: flex;
     width: 1000px;
     margin: 120px auto;
