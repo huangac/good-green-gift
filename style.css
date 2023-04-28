@@ -34,6 +34,7 @@ h3 {
     font-family: neue-haas-grotesk-display, sans-serif;
     font-style: italic;
     border-bottom: 0.25px solid rgb(85, 85, 85);
+    z-index: 500;
 }
 #nav * {
     list-style-type: none;
