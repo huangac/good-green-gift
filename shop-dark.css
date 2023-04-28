@@ -6,14 +6,13 @@
     border: solid 1px white;
     border-radius: 20px;
     color: white;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(26, 26, 26);
 }
 #color-mode:hover {
     background-color: white;
     color: black;
 }
 #shop-container {
-    background-color:rgb(42, 42, 42);
     display: flex;
     width: 1000px;
     margin: 120px auto;
@@ -32,19 +31,19 @@
 }
 #add-to-cart-button {
     margin-left: 10px;
-    background-color: #656565;
+    background-color: #7b7b7b;
     color: white;
     z-index: 2;
 }
 #add-to-cart-button:hover {
-    background-color: #444343;
+    background-color: #616161;
 }
 #view-cart-button {
-    background-color: #224229;
+    background-color: #367e46;
     color: white;
 }
 #view-cart-button:hover {
-    background-color: #142718;
+    background-color: #275d33;
     color: white;
 }
 #add-to-cart-info {
@@ -64,8 +63,8 @@
     top: 200px;
     left: 0px;
     right: 0px;
-    background-color: white;
-    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 25%);
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 0px 24px 8px rgba(255, 255, 255, 25%);
     opacity: 0;
     padding: 50px;
     z-index: 1;
@@ -100,9 +99,10 @@
     text-align: right;
 }
 #remove-button {
+    color: white;
     font-family: ibm-plex-mono, sans-serif;
     border: solid 0px black;
-    background-color: white;
+    background-color: rgb(26, 26, 26);
     text-decoration: underline;
     z-index: 999;
 }

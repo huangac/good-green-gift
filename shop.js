@@ -5,7 +5,7 @@ let price = 24.99;
 
 function calcCart(qty) {
     cartQty = parseFloat(cartQty) + parseFloat(qty);
-    subtotal = parseFloat(cartQty) * parseFloat(price);
+    subtotal = (parseFloat(cartQty) * parseFloat(price)).toFixed(2);
     total = (subtotal * 1.0925).toFixed(2);
     localStorage.setItem("cartQty", cartQty);
     if (cartQty > 0) {
@@ -37,20 +37,22 @@ function closeCart() {
 }
 
 function toggleStylesheet() {
-    var currentStylesheet = $("#color-mode-stylesheet").attr("href");
+    var currentStylesheet = $("#shop-color-mode-stylesheet").attr("href");
     if (currentStylesheet == "shop-light.css") {
-        $("#color-mode-stylesheet").attr("href", "shop-dark.css");
+        $("#color-mode-stylesheet").attr("href", "style-dark.css");
+        $("#shop-color-mode-stylesheet").attr("href", "shop-dark.css");
         $("#color-mode").html("Shop in light mode");
     } else if (currentStylesheet == "shop-dark.css") {
-        $("#color-mode-stylesheet").attr("href", "shop-light.css");
-        $("#color-mode").html("Shop in light mode");
+        $("#color-mode-stylesheet").attr("href", "style-light.css");
+        $("#shop-color-mode-stylesheet").attr("href", "shop-light.css");
+        $("#color-mode").html("Shop in dark mode");
     }
     console.log($("#color-mode-stylesheet").attr("href"));
 
 }
 
 $(document).ready(function() {
-    console.log($("#color-mode-stylesheet").attr("href"));
+    console.log($("#shop-color-mode-stylesheet").attr("href"));
     $("#color-mode").on("click", function() {
         toggleStylesheet();
     })

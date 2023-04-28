@@ -1,0 +1,65 @@
+body {
+    font-family: ibm-plex-mono, sans-serif;
+    margin-top: 92px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32pt;
+}
+h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24pt;
+}
+h3 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 16pt;
+    font-weight: 500;
+    line-height:0;
+}
+
+#nav {
+    position: fixed;
+    height: 92px;
+    top: 0; left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: italic;
+    border-bottom: 0.25px solid white;
+    z-index: 500;
+}
+#nav * {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#nav li {
+    display: inline-block;
+    padding-right: 10px;
+}
+#nav a {
+    display: flex;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    #nav {
+    }
+    #nav a {
+        padding: 20px 5px;
+    }
+}
