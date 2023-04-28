@@ -20,4 +20,26 @@
 #timeline li {
     padding-inline-start: 1ch;
 }
+#gift{
+    width: 300px;
+    margin-top: 30px;
+}
+#whynow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+#whynowcaption{
+    margin-top: 20px;
+    max-width: 400px;
+    padding-right: 50px;
+}
+#chart{
+   max-width: 800px;
+   margin: auto;
+   
+}
+
 

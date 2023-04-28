@@ -5,6 +5,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="invest.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/cry7abk.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body>
@@ -33,15 +34,24 @@
             packaging, will be the perfect gift for corporations, young people, college students, and anyone interested
             in gift-giving. We also cater to plant lovers who appreciate and enjoy having indoor plants.
         </p>
-        <h2>
-            Why now?
-        </h2>
-        <p>
-            We understand that the current corporate gifts available in the market are generic and un-meaningful. That's
-            why we're dedicated to providing a personalized and thoughtful gift-giving experience for businesses to
-            offer their employees or clients. We also cater to individuals who are interested in gift-giving and would
-            like to offer more meaningful gifts.
-        </p>
+        <div id="whynow">
+            <div id="whynowcaption">
+                <h2>
+                    Why now?
+                </h2>
+                <p>
+                    We understand that the current corporate gifts available in the market are generic and un-meaningful. That's
+                    why we're dedicated to providing a personalized and thoughtful gift-giving experience for businesses to
+                    offer their employees or clients. We also cater to individuals who are interested in gift-giving and would
+                    like to offer more meaningful gifts.
+                </p>
+            </div>
+            <div>
+                <img src="assets/home/gift.jpeg" id="gift">
+            </div>
+
+        </div>
+        
         <h2>
             Invest in us!
         </h2>
@@ -56,6 +66,9 @@
             investment, we can continue to innovate and expand our product line, ultimately creating more meaningful
             gift-giving experiences for our customers.
         </p>
+    </div>
+    <div id = "chart">
+
     </div>
     <div id="timeline">
         <h1>Timeline</h1>
@@ -77,7 +90,92 @@
         </ul>
 
     </div>
+    <script>
+        var options = {
+    series: [
+    {
+      name: "Best Case",
+      data: [ 51, 47, 47, 47, 46, 44, 41, 68, 84, 101, 125, 156, 196]
+    },
+    {
+      name: "Worst Case",
+      data: [16, 9, 5, 0, 0, 0, 0, 23, 33, 40, 51, 67, 78]
+    },
     
+    {
+      name: "Base Case",
+      data: [27, 30, 19, 16, 11, 13, 21, 38, 50, 64, 81, 100, 122]
+    },
+    {
+      name: "Orignal Budget",
+      data: [78, 86, 94, 104, 114, 126, 138, 152, 167, 184, 202, 223, 245]
+    }
+  ],
+    chart: {
+    height: 450,
+    type: 'line',
+    fontFamily: 'ibm-plex-mono, sans-serif',
+    dropShadow: {
+      enabled: true,
+      color: '#000',
+      top: 18,
+      left: 7,
+      blur: 10,
+      opacity: 0.2
+    },
+    toolbar: {
+      show: false
+    }
+  },
+  colors: ['#4A7C59', '#68B0AB','#8FC0A9','#C8D5B9'],
+  dataLabels: {
+    enabled: true,
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  title: {
+    text: 'Revenue Predictions for Different Cases',
+    align: 'left',
+  },
+  grid: {
+    borderColor: '#e7e7e7',
+    row: {
+      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5
+    },
+  },
+  markers: {
+    size: 1
+  },
+  xaxis: {
+    categories: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10', 'W11', 'W12', 'W13'],
+    title: {
+      text: 'Weeks'
+    }
+  },
+  yaxis: {
+    title: {
+      text: 'USD'
+    },
+    min: 0,
+    max: 250
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right',
+    floating: true,
+    offsetY: -25,
+    offsetX: -5
+  },
+  
+  
+  };
+
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  chart.render();
+
+  </script>
 </body>
 
 
