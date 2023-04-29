@@ -1,30 +1,35 @@
 .team {
-    margin: 128px auto 64px auto;
+    margin: 128px auto 0px auto;
     max-width: 1000px;
-    
-}
-.team-container {
-    display: flex;
 }
 .all-members {
     justify-content: space-between;
 }
+#our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-team-member {
+    margin-right: 10px;
+    text-align: center;
+}
+.our-team-role {
+    color: black;
+}
+.our-pfp {
+    height: 180px;
+    width: 180px;
+}
+
 .team-member {
     display: flex;
     width: 450px;
     margin: 10px 0px;
-    
 }
-#our-team-main {
-    width: 400px;
+.team-container {
+    display: flex;
 }
-#web-team-main {
-    width: 400px;
-}
-.our-pfp {
-    width: 100px;
-    height: 100px;
-}
+
 .web-pfp {
     width: 100px;
     height: 100px;
@@ -37,18 +42,4 @@
 #web-team {
     margin: 128px auto 0px auto;
     max-width: 1000px;
-}
-
-@media screen and (max-width: 1000px) {
-    .team {
-        max-width: 600px;
-    }
-    .team-container {
-        display: block;
-    }
-}
-@media screen and (max-width: 600px) {
-    .team {
-        max-width: 400px;
-    }
 }

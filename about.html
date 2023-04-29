@@ -5,7 +5,7 @@
     <link href="about.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/cry7abk.css" />
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script>
+    <!--<script>
       $(document).ready(function () {
         $(".our-pfp").css("opacity", "0.8");
         $(".our-pfp").on("mouseover", function () {
@@ -23,7 +23,8 @@
           $("#our-team-main").attr("src", temp).fadeIn();
         });
       });
-    </script>
+    </script>-->
+    
   </head>
   <body>
     <div id="nav">
@@ -38,67 +39,41 @@
     </div>
     <div class="team">
       <h1>Our Team</h1>
-      <div class="team-container">
-        <div id="our-team-thumb">
-          <div class="all-members">
-            <div class="team-member">
-              <img
-                src="assets/about/kaylie.jpg"
-                class="our-pfp"
-                caption="Kaylie is a ..."
-              />
-              <div class="bio">
-                <h3>Kaylie Li</h3>
-                <span>Product Manager</span>
-              </div>
-            </div>
-            <div class="team-member">
-              <img
-                src="assets/about/dom.jpg"
-                class="our-pfp"
-                caption="dom bio"
-              />
-              <div class="bio">
-                <h3>Dom Jocas</h3>
-                <span>Product Manager</span>
-              </div>
-            </div>
-            <div class="team-member">
-              <img
-                src="assets/about/diora.jpg"
-                class="our-pfp"
-                caption="diora bio"
-              />
-              <div class="bio">
-                <h3>Diora Juraboeva</h3>
-                <span>Engineer</span>
-              </div>
-            </div>
-            <div class="team-member">
-              <img src="assets/about/bj.jpg" class="our-pfp" caption="bj bio" />
-              <div class="bio">
-                <h3>BJ Moon</h3>
-                <span>Designer</span>
-              </div>
-            </div>
-            <div class="team-member">
-              <img
-                src="assets/about/tiana.jpg"
-                class="our-pfp"
-                caption="tiana bio"
-              />
-              <div class="bio">
-                <h3>Tiana Day</h3>
-                <span>Marketing</span>
-              </div>
-            </div>
-          </div>
+      <div id="our-team-container">
+        <div class="our-team-member">
+          <a data-fslightbox="our-team" href="http://webdev.iyaclasses.com/~huangac/acad275/good-green-gift/assets/about/kaylie.jpg">
+            <img class="our-pfp" src="assets/about/kaylie.jpg">
+            <p class="our-team-role"><strong>Kaylie Li</strong><br> Product Designer</p>
+          </a>
         </div>
-        <div>
-          <img src="assets/about/kaylie.jpg" id="our-team-main" />
-          <p id="our-team-caption">kaylie bio</p>
+        <div class="our-team-member">
+          <a data-fslightbox="our-team" href="http://webdev.iyaclasses.com/~huangac/acad275/good-green-gift/assets/about/dom.jpg">
+            <img class="our-pfp" src="assets/about/dom.jpg">
+            <p class="our-team-role"><strong>Dom Jocas</strong><br> Product Designer</p>
+          </a>
         </div>
+        <div class="our-team-member">
+          <a data-fslightbox="our-team" href="http://webdev.iyaclasses.com/~huangac/acad275/good-green-gift/assets/about/bj.jpg">
+            <img class="our-pfp" src="assets/about/bj.jpg">
+            <p class="our-team-role"><strong>BJ Moon</strong><br> Designer</p>
+          </a>
+        </div>
+        <div class="our-team-member">
+          <a data-fslightbox="our-team" href="http://webdev.iyaclasses.com/~huangac/acad275/good-green-gift/assets/about/diora.jpg">
+            <img class="our-pfp" src="assets/about/diora.jpg">
+            <p class="our-team-role"><strong>Diora Juraboeva</strong><br> Engineer</p>
+          </a>
+        </div>
+        <div class="our-team-member">
+          <a data-fslightbox="our-team" href="http://webdev.iyaclasses.com/~huangac/acad275/good-green-gift/assets/about/tiana.jpg">
+            <img class="our-pfp" src="assets/about/tiana.jpg">
+            <p class="our-team-role"><strong>Tiana Day</strong><br> Marketing</p>
+          </a>
+        </div>
+        
+  
       </div>
+     
     </div>
     <div class="team">
       <h1>Web Team</h1>
@@ -147,6 +122,14 @@
         </div>
       </div>
     </div>
+    <script src="fslightbox-basic-3.4.1/fslightbox.js"></script>
+    <script>
+      fsLightbox.props.types = ["image", "image", "image", "image", "image"];
 
+      fsLightboxInstances["our-team"].props.onOpen = function () {
+        console.log("The first lightbox has opened.");
+      }
+
+      </script>
   </body>
 </html>
