@@ -38,6 +38,8 @@ function updateCart() {
     }
     if (cartQty > 0) {
         $("#view-cart-button").html("View cart (" + cartQty + ")");
+    } else {
+        $("#view-cart-button").html("View cart");
     }
     console.log(cartQty);
 
