@@ -17,7 +17,7 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
-        <div id="product">
+        <!-- <div id="product">
             <h1>How it works</h1>
             <video width="320"  controls autoplay>
                 <source src="assets/product/demo-video.mp4" type=video/mp4>
@@ -31,6 +31,150 @@
         <div>
             <h1>Why the Good Green Gift?</h1>
             <p>Problem: We are taking a step towards removing inconveniences with looking after live plants.</p>
-        </div>
-    </body>
+        </div> -->
+
+        <div class="container">
+
+            <div class="black"></div>
+            
+            <div class="title">The Good Green Gift</div>
+            
+            
+            <img id="plantcutoutwhiteleft" src="goodgreengift/plantcutoutwhiteleftfinal.png">
+            
+            <video class="cutoutvid">
+                <source src="goodgreengift/cutoutvidfinal.mp4?x=1" type="video/mp4">
+            </video>
+            
+            <div class="ourplant">Our Plant</div>
+            <div class="yourplant">Your Plant</div>
+            
+            
+            <div class="white"></div>
+            <div class="white1"></div>
+            <div class="white2"></div>
+            
+            <img class="midplant" id="alive" src="goodgreengift/plant1alive.png">
+            <img class="midplant" id="dead" src="goodgreengift/plant1dead.png">
+            
+            
+            
+            
+            <video class="demovid">
+                <source src="goodgreengift/demovid.mov" type="video/mp4">
+            </video>
+            
+            <video class="arrowvid">
+                <source src="goodgreengift/arrow.mp4" type="video/mp4">
+            </video>
+            
+            <div class="videxplanation">Our self-watering pot is simple and foolproof. It is made up of two compartments: one to hold the plant and absorb the water, and one to collect the water and hold it over time. Just fill the tube with water once a week and let our pot do the rest!</div>
+            
+            <div class="howdoesitwork">How Does it Work?</div>
+            
+            <div class="whyus">Why Us?</div>
+            <div class="whyustext">We know you have a busy life. That's why The Good Green Gift is a self-watering plant pot designed for those who don't have time. Our pot is intuitive, sturdy, customizable, and affordable, not to mention sustainably made. An investment in our pot is an investment in your mental health, as well as the environment. </div>
+            
+            <!-- <div id="content"> -->
+            <img class="content2" src="goodgreengift/content2.png">
+            <img class="content3" src="goodgreengift/content3.jpeg">
+            <img class="content4" src="goodgreengift/content4.jpeg">
+            <img class="content4alternate" src="goodgreengift/content4alternate.png">
+            <div class="getyours">Get Yours Today!</div>
+            <img class="content3alternate" src="goodgreengift/content3alternate.png">
+            <!-- </div> -->
+            
+            <img class="content5alternate" src="goodgreengift/content5alternate.png">
+            
+            
+            
+            </div>
+            <div id="watch">
+                <a href="#" id="watch"><img src="goodgreengift/playbutton.png"></a>
+            </div>
+            
+            <div class=".hide" id=".timer1"></div>
+                    <div class=".hide" id=".timer2"></div>
+                    <div class=".hide" id=".timer3"></div>
+            
+                </body>
+            
+                <script>
+            $(document).ready(function(){
+            
+                $(".cutoutvid").hide();
+                $(".content5alternate").hide();
+            $("#watch").on("click", function(){
+               $("#watch").hide();
+               
+                $(document).delay(18500).queue(function(){
+                    // 15 sec after start
+                    // $(".cutoutvid").animate({"left":"100px"},500);
+                    $(".cutoutvid").hide();
+                    // $(".demovid").delay(30000).hide();
+                })
+            
+                // $("#timer2").delay(36000).queue(function(){
+                   
+                //     $(".demovid").hide();
+                // })
+            
+            // $(".content").delay(33500).queue(function(){
+            //     $(".demovid").animate({"top":"700px","display":"none"},1000);
+            // })
+            
+            
+                // $(".black").delay(3000).fadeIn();
+                $(".title").delay(2000).fadeIn(500).delay(3000).fadeOut();
+                $("#plantcutoutwhiteleft").delay(4000).animate({"left":"-23.6%"},1000).delay(14000).animate({"left":"-1200px"},1000).delay(2000).fadeOut();
+                $(".white").delay(4400).fadeIn(100).delay(100).animate({"left":"1200px"},700);
+                $(".white1").delay(5500).fadeIn(1).animate({"top":"0px"},1000);
+                $(".white2").delay(5600).fadeIn(1).animate({"top":"420px"},1000);
+                $(".ourplant").delay(6500).fadeIn(500).delay(12000).fadeOut();
+                $(".yourplant").delay(6600).fadeIn(500).delay(11800).fadeOut();
+                $(".cutoutvid").delay(6000).fadeIn(100).queue(function(){
+                    $(this).trigger("play").delay(2000).fadeOut();
+                    $(".arrowvid").delay(500).fadeIn().delay(12000).fadeOut();
+                     $(".arrowvid").trigger("play").delay(1000).queue(function(){
+                        $(".cutoutvid").fadeOut();
+                        
+                       })     
+            
+                    $(".demovid").delay(16000).animate({"left":"1000px"},1000);
+                    $(".demovid").queue(function(){
+                        $(this).trigger("play");
+                        $(this).delay(11400).animate({"top":"700px"},700);
+                        
+                    })     
+                    $(".videxplanation").delay(16500).fadeIn().delay(11400).fadeOut();
+                // $(".cutoutvid").delay(500).queue(function(){
+            
+                // })
+             })     
+            // $(".demovid").delay(33500).animate({"top":"700px"},700);
+            $(".howdoesitwork").delay(20000).fadeIn().delay(2000).fadeOut();
+            $("#alive").delay(7000).fadeIn().delay(6000).fadeOut();
+            $("#dead").delay(13500).fadeIn().delay(5000).fadeOut();
+            $(".whyus").delay(33500).animate({"top":"300px"},1000).delay(1500).fadeOut();
+            $(".content5alternate").delay(33500).fadeIn().animate({"top":"60px"},700).delay(1500).animate({"left":"50%"},500);
+            $(".whyustext").delay(35000).fadeIn().delay(7000).fadeOut();
+            $(".content2").delay(43000).fadeIn();
+            $(".content3").delay(43000).fadeIn();
+            $(".content4").delay(43000).fadeIn();
+            $(".content4alternate").delay(43000).fadeIn();
+            $(".content3alternate").delay(43000).fadeIn();
+            $(".getyours").delay(43000).fadeIn();
+            
+            
+            $(".content5alternate").delay(6000).queue(function(){
+            $(this).css({"height":"40%","top":"15px","left":"40%",},1000);
+            
+            })
+            
+            
+            })
+            })
+                </script>
+            
+
 </html>
