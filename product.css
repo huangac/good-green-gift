@@ -1,0 +1,253 @@
+.container {
+    width: 100%;
+    height: 670px;
+    /* border: 1px solid red; */
+    position:relative;
+    overflow: hidden;
+}
+
+.black {
+    width: 100%;
+    height: 670px;
+    background-color:black;
+    /* display: none; */
+    position: relative;
+    z-index: -1;
+   
+
+}
+#watch{
+    position: absolute;
+
+left: 48%;
+top: 140px;
+z-index: 2
+}
+
+#plantcutoutwhiteleft{
+position: absolute;
+top: 42px;
+width: 1848px;
+height: 560px;
+left: -1900px;
+/* left: -517px; */
+/* left: -28.2%; */
+/* border: 1px solid teal; */
+/* z-index: 2; */
+/* display: none; */
+}
+
+.white {
+    width: 300px;
+    height: 506px;
+    position: absolute;
+    background-color: white;
+    display:none;
+    z-index:-1; 
+    top: 70px;
+    left: 100px;
+}
+
+.white1 {
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    display: none;
+    z-index: -1;
+
+}
+.white2 {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    display: none;
+    z-index: -1;
+}
+.title {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    left: 34%;
+    top: 300px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+.ourplant {
+    font-size: 45px;
+    position: absolute;
+    left: 45%;
+    top: 160px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.yourplant {
+    font-size: 45px;
+    position: absolute;
+    left: 45%;
+    top: 540px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.cutoutvid {
+position: absolute;
+/* height: 73.5%; */
+height: 514.5px;
+top: 66px;
+/* left: 67.5%; */
+ /* border: 1px solid red;  */
+ right: 0px;
+
+}
+
+.midplant {
+    position: absolute;
+    width: 40%;
+    height: 72%;
+    left: 15px;
+    top: 100px;
+    display: none;
+}
+
+.cutout {
+    position: absolute;
+
+}
+
+.demovid {
+position: absolute;
+height: 85%;
+top: 25px;
+left: -400px;
+ /* border: 1px solid red;  */
+ max-height: 700px;
+}
+
+.arrowvid{
+    position: absolute;
+    height: 50%;
+    top: 210px;
+    left: 650px; 
+    display: none;
+}
+
+.videxplanation {
+    position: absolute;
+    width: 700px;
+    font-size: 25px;
+    top: 250px;
+    left: 11%;
+    display: none;
+        /* z-index: 3; */
+        font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.howdoesitwork{
+    position: absolute;
+    width: 700px;
+    font-size: 50px;
+    top: 280px;
+    left: 900px;
+    /* color: white; */
+    display: none;
+    /* z-index: 3; */
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.whyus{
+    position: absolute;
+    width: 200px;
+    font-size: 50px;
+    top: -300px;
+    /* top: 300px; */
+    left: 1050px;
+    /* color: white; */
+    /* display: none; */
+    font-family: neue-haas-grotesk-display, sans-serif;
+
+}
+.content2 {
+    position: absolute;
+    height: 46%;
+    top: 15px;
+    left: 20%;
+    /* z-index: 3; */
+    display: none;
+}
+.content3 {
+    position: absolute;
+    height: 46%;
+    top: 345px;
+    left: 20%;
+    display: none;
+}
+
+.content4 {
+    position: absolute;
+    height: 46%;
+    top: 345px;
+    left: 68%;
+    display: none;
+}
+
+.content4alternate {
+    position: absolute;
+    height: 46%;
+    top: 15px;
+    left: 68%;
+    display: none;
+}
+
+
+.content5alternate {
+    position: absolute;
+    /* height: 40%; */
+    /* top: 15px; */
+    /* left: 40%; */
+    /* top: 60px; */
+    top: 700px;
+    left: 10%;
+    height: 80%;
+    /* display: none; */
+    transition: all 0.5s ease-out;
+}
+
+.content3alternate {
+    position: absolute;
+    height: 40%;
+    top: 385px;
+    left: 40%;
+    display: none;
+}
+
+.getyours {
+    font-size: 48px;
+    position: absolute;
+    top: 307px;
+    left: 41%;
+    /* color: white; */
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.whyustext {
+    position: absolute;
+    width: 500px;
+    font-size: 25px;
+    top: 250px;
+    left: 11%;
+    /* color: white; */
+    display: none;
+        /* z-index: 3; */
+        font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.hide {
+    display: none;
+    width: 300px;
+}
