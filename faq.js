@@ -1,67 +1,56 @@
 let link = new Array; let site = new Array; let url = new Array; let category = new Array; let keywords = new Array;
 
-link[0] = "Piskel - free online sprite editor" ; site[0] = "Piskel" ; url[0] = "https://www.piskelapp.com/" ; category[0] = "Art" ; keywords[0] = "pixel art sprite game" ;
-link[1] = "Home" ; site[1] = "Pinterest" ; url[1] = "https://www.pinterest.com/" ; category[1] = "Social Media" ; keywords[1] = "moodboard pictures aesthetic " ;
-link[2] = "Spotify web player" ; site[2] = "Spotify" ; url[2] = "https://open.spotify.com/" ; category[2] = "Music" ; keywords[2] = "playlist songs album singer" ;
-link[3] = "Iovine and Young Academy" ; site[3] = "University of Southern California" ; url[3] = "https://iovine-young.usc.edu/" ; category[3] = "School" ; keywords[3] = "dr dre andre jimmy usc iya cohort arts technology and the business innovation" ;
-link[4] = "Jacqueline Sung's LinkedIn" ; site[4] = "LinkedIn" ; url[4] = "https://www.linkedin.com/in/jacqueline-sung-83b540248/" ; category[4] = "Work" ; keywords[4] = "link work jobs resume connections" ;
-link[5] = "Figma Community" ; site[5] = "Figma" ; url[5] = "https://www.figma.com/community" ; category[5] = "Design" ; keywords[5] = "mockups uiux flow frameworks" ;
-link[6] = "USC's Premiere Creative Design Agency" ; site[6] = "Innovative Design at USC" ; url[6] = "https://www.innodatusc.com/" ; category[6] = "Design" ; keywords[6] = "innoD clubs student organization" ;
-link[7] = "Home" ; site[7] = "New Jeans" ; url[7] = "https://newjeans.kr/" ; category[7] = "Kpop" ; keywords[7] = "hybe danielle minji haerin hyejin hanni music" ;
-link[8] = "Home" ; site[8] = "DoorDash" ; url[8] = "https://www.doordash.com/" ; category[8] = "Food" ; keywords[8] = "delivery pickup restaurants menus" ;
-link[9] = "skribbl - Free Multiplayer Drawing & Guessing Game" ; site[9] = "skribbl" ; url[9] = "https://skribbl.io/" ; category[9] = "Game" ; keywords[9] = "pictionary online draw play " ;
-link[10] = "Home" ; site[10] = "Amazon" ; url[10] = "https://www.amazon.com/" ; category[10] = "Shopping" ; keywords[10] = "online catalog delivery pickup " ;
-link[11] = "Coolors - The super fast color palettes generator!" ; site[11] = "Coolors" ; url[11] = "https://coolors.co/" ; category[11] = "Design" ; keywords[11] = "palette generate hues RGB colors" ;
-link[12] = "Home" ; site[12] = "Instagram" ; url[12] = "https://www.instagram.com/" ; category[12] = "Social Media" ; keywords[12] = "photos aesthetic friends post stories messaging" ;
-link[13] = "Home" ; site[13] = "Notion" ; url[13] = "https://www.notion.so/" ; category[13] = "Productivity" ; keywords[13] = "work jobs management organization" ;
-link[14] = "Home" ; site[14] = "HBO Max" ; url[14] = "https://www.hbomax.com/" ; category[14] = "Entertainment" ; keywords[14] = "movies series tv shows " ;
-link[15] = "Netflix - Watch TV Shows Online, Watch Movies Online" ; site[15] = "Netflix" ; url[15] = "https://www.netflix.com/" ; category[15] = "Entertainment" ; keywords[15] = "movies series tv shows" ;
-link[16] = "Home" ; site[16] = "Youtube" ; url[16] = "https://www.youtube.com/" ; category[16] = "Social Media" ; keywords[16] = "watch videos youtuber entertainment " ;
-link[17] = "Minesweeper Online - Play Free Online Minesweeper" ; site[17] = "Minesweeper" ; url[17] = "https://minesweeperonline.com/" ; category[17] = "Game" ; keywords[17] = "simple play game mine online" ;
-link[18] = "TikTok - Make Your Day" ; site[18] = "TikTok" ; url[18] = "https://www.tiktok.com/en/" ; category[18] = "Social Media" ; keywords[18] = "short videos entertainment funny " ;
-link[19] = "POPCAT" ; site[19] = "Popcat" ; url[19] = "https://popcat.click/" ; category[19] = "Game" ; keywords[19] = "fun cat cute play click tap" ;
+link[0] = "Where do we ship to?"; site[0] = "We currently only deliver our plant locally in Los Angeles but we are planning to expand in the next few months!";  
+link[1] = "What makes the Good Green Gift different from usual plant pots?"; site[1] = "The Good Green Gift is a unique plant pot that offers a sustainable and eco-friendly way of watering plants. Unlike traditional plant pots, the Good Green Gift has a 3-D modeled design that features a hole to fill the water in just once. Once filled, the water sits at the bottom of the pot, providing a constant supply of water to the roots of the plant. ";
+link[2] = "What was the inspiration behind Good Green Gift?"; site[2] = "The inspiration behind the Good Green Gift stemmed from the common problem of plants wilting and dying due to the inability to keep up with regular watering, especially for busy individuals such as college students. Recognizing the need for a practical and sustainable solution, the team behind the Good Green Gift designed a pot that provides a constant supply of water to the roots of the plant, alleviating the need for frequent watering and allowing the plant to thrive. The result is a convenient and eco-friendly product that allows even the busiest individuals to enjoy the benefits of indoor plants without the stress of maintenance.";
+link[3] = "How does the Good Green Gift work?"; site[3] = "The pot features a hole at the top for filling water, which is then stored in a reservoir at the bottom of the pot. The plant sits on top of a perforated platform that allows water to seep through and reach the roots of the plant. As the plant draws water from the reservoir, the level of water in the pot decreases, creating a vacuum that allows the pot to draw more water from the reservoir when needed. This ensures that the plant always has access to the right amount of water and prevents over or under watering."; 
+link[4] = "How many colors do we make?"; site[4] = "We currently have only 1 color, which is our signature white."; 
+link[5] = "How much does the Good Green Gift cost?"; site[5] = "Each pot is $24.99."; 
+link[6] = "How are we entering the market?"; site[6] = "We are bringing 'The Good Green Gift' to market. We plan to grow this business through social media branding, visual marketing and focus on sustainable gifting. ";
+link[7] = "Who are our competitors and what makes us different?"; site[7] = "LivelyRoot, BloomScape, The Sill are all competitors but what sets us apart is their ability to remove everyday inconveniences from people’s lives."; 
+link[8] = "Who is the team behind the Good Green Gift?"; site[8] = "Our team is Kaylie Li, the product manager, BJ Moon, the designer, Dominic Jocus, product designer, Tiana Day, marketing manager, Diora Juraboeva, engineer. We are a team of innovative USC students who are passionate about creating unique and sustainable self-watering pots and indoor plant kits that provide the 'gift of life' and inspire meaningful gift-giving experiences."; 
+link[9] = "What makes our packaging so convenient?"; site[9] = "All you have to do is lift up the top and all the sides of the box open up. "; 
+link[10] = "How can you personalize your pot?"; site[10] = "We will soon be coming out with a painting set alongside our pots so that people can paint and personalize their pots."; 
+link[11] = "How did we come up with the design?"; site[11] = "Our team did a lot of research on the development of “self-watering” technique and its effectiveness, the waterproofing techniques, and also into the 3-D printing techniques."; 
+link[12] = "What is our mission?"; site[12] = "Our mission is to provide our customers with the 'gift of life' through our innovative 3D printed self-watering pots and indoor plant kit, creating meaningful gift-giving experiences that live beyond the moment."; 
+link[13] = "What do our customers say about us?"; site[13] = "Notion"; 
+link[14] = "What market are we exploring?"; site[14] = "The household plant and gift-giving industry is a rapidly growing market, with an estimated value of over $22 billion in 2020. This industry is driven by a growing interest in houseplants and their associated health and wellness benefits, as well as an increasing desire for unique and meaningful gift-giving experiences.";
 
-let code="";
+let code = "";
 
-const match = function(input){
+const match = function (input) {
     let ifmatch = false
-    if(input !== ""){
-        for(let i = 0 ; i < link.length ; i++){
-            if(link[i].toLowerCase().indexOf(input)>=0||
-                site[i].toLowerCase().indexOf(input)>=0||
-                url[i].toLowerCase().indexOf(input)>=0||
-                category[i].toLowerCase().indexOf(input)>=0||
-                keywords[i].toLowerCase().indexOf(input)>=0)
-                {
-                    ifmatch=true;
-                }
-                if(ifmatch){
-                    results(i);
-                }
-                
-                ifmatch=false
+    if (input !== "") {
+        for (let i = 0; i < link.length; i++) {
+            if (link[i].toLowerCase().indexOf(input) >= 0 ||
+                site[i].toLowerCase().indexOf(input) >= 0 ) {
+                ifmatch = true;
+            }
+            if (ifmatch) {
+                results(i);
+            }
+
+            ifmatch = false
         }
     }
-    
-    
+
+
 }
 
-const results= function(i){
-    code += link[i] + "<br/>";
-    code += site[i] + "<br/>";
-    code += category[i] + "<br/>";
-    code += "<a href='" + url[i] + "'><p>Visit</p></a>";
-    code += "<br />"
+const results = function (i) {
+    code += "<h2>"+link[i] + "</h2><br/>";
+    code += site[i] + "<br/><br/>";
+
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     $("#searchbutton").on("click", function () {
         $("#content").css("position", "absolute");
-        code="";
+        code = "";
 
         let input = $("#searchVal").val().toLowerCase();
         match(input);
-        if(code==""){
+        if (code == "") {
             code += "no results"
         }
 
@@ -71,3 +60,40 @@ $(document).ready(function() {
 
     })
 })
+
+function evaluate() {
+
+    // check the value of  #episodeselect and fill in the .innerHTML of the #episodesummary div accordingly 
+    if (document.querySelector("#faqselect").value == "about purchasing") {
+        code="";
+        code += "<h2>"+link[0] + "</h2><br/>" + site[0] + "<br/><br/>";
+        code += "<h2>"+link[4] + "</h2><br/>" + site[4] + "<br/><br/>";
+        code += "<h2>"+link[5] + "</h2><br/>" + site[5] + "<br/><br/>";
+        document.querySelector("#content").innerHTML = code;
+    }
+    if (document.querySelector("#faqselect").value == "about the business") {
+        code="";
+        code += "<h2>"+link[6] + "</h2><br/>" + site[6] + "<br/><br/>";
+        code += "<h2>"+link[7] + "</h2><br/>" + site[7] + "<br/><br/>";
+        code += "<h2>"+link[8] + "</h2><br/>" + site[8] + "<br/><br/>";
+        code += "<h2>"+link[12] + "</h2><br/>" + site[12] + "<br/><br/>";
+        code += "<h2>"+link[14] + "</h2><br/>" + site[14] + "<br/><br/>";
+        document.querySelector("#content").innerHTML = code;
+    }
+    if (document.querySelector("#faqselect").value == "about the product") {
+        code="";
+        code += "<h2>"+link[1] + "</h2><br/>" + site[1] + "<br/><br/>";
+        code += "<h2>"+link[2] + "</h2><br/>" + site[2] + "<br/><br/>";
+        code += "<h2>"+link[3] + "</h2><br/>" + site[3] + "<br/><br/>";
+        code += "<h2>"+link[9] + "</h2><br/>" + site[9] + "<br/><br/>";
+        code += "<h2>"+link[10] + "</h2><br/>" + site[10] + "<br/><br/>";
+        code += "<h2>"+link[11] + "</h2><br/>" + site[11] + "<br/><br/>";
+        code += "<h2>"+link[13] + "</h2><br/>" + site[13] + "<br/><br/>";
+        document.querySelector("#content").innerHTML = code;    
+    }
+
+}
+
+document.querySelector("#check").addEventListener("click", function () {
+    evaluate();
+});

@@ -5,3 +5,6 @@
     flex-direction: column;
     margin-bottom: 100px;
 }
+#content{
+    max-width: 800px;
+}
