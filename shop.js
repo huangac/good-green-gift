@@ -1,26 +1,61 @@
-let cartQty = 0;
+let cart = [];
 let subtotal = 0;
 let total = 0;
-let price = 24.99;
 
-function calcCart(qty) {
-    cartQty = parseFloat(cartQty) + parseFloat(qty);
-    subtotal = (parseFloat(cartQty) * parseFloat(price)).toFixed(2);
-    total = (subtotal * 1.0925).toFixed(2);
-    localStorage.setItem("cartQty", cartQty);
-    if (cartQty > 0) {
-        $("#view-cart-button").val("View cart (" + cartQty + ")");
-    } else {
-        $("#view-cart-button").val("View cart");
+
+function loadCart() {
+    // from localStorage
+    let savedCart = JSON.parse(localStorage.getItem("cartStorage"));
+    if (savedCart != null) {
+        cart = savedCart;
     }
+}
+
+function addToCart(quantity, item, price) {
+    // from button
+    cart.push({
+        "quantity": quantity,
+        "item": item,
+        "price": parseFloat(quantity) * parseFloat(price)
+    })
+    console.log(cart);
+    updateCart();
+}
+
+function updateCart() {
+    //update subtotal, total
+    subtotal = 0;
+    for (let i = 0; i < cart.length; i++) {
+        subtotal = (parseFloat(subtotal) + parseFloat(cart[i].price)).toFixed(2);
+    }
+    total = (parseFloat(subtotal) * 1.0925).toFixed(2);
+    console.log("subtotal: " + subtotal + ", total: " + total);
+
+    //update #view-cart-button
+    let cartQty = 0;
+    for (let i = 0; i < cart.length; i++) {
+        cartQty = parseFloat(cartQty) + parseFloat(cart[i].quantity);
+    }
+    if (cartQty > 0) {
+        $("#view-cart-button").html("View cart (" + cartQty + ")");
+    }
+    console.log(cartQty);
+
+    //update localStorage
+    localStorage.setItem("cartStorage", JSON.stringify(cart));
     
 }
+
 function viewCart() {
-    if (cartQty != 0) {
-        var entryHTML = '<div class="cart-entry"><p>Self Watering Plant (' + cartQty + ')</p> <input type="button" id="remove-button" value="Remove"></div>';
+    $("#cart-info").html("");
+    if (cart.length > 0) {
+        for (let i = 0; i < cart.length; i++) {
+            let entryHTML = '<div class="cart-entry"><p>' + cart[i].item + ' (' + cart[i].quantity + ')</p> <input type="button" class="remove-button" value="Remove" id="' + i + '"></div>';
+            $("#cart-info").append(entryHTML);
+        }
         var subtotalHTML = "<p> Subtotal: <strong>" + subtotal + "</strong></p>";
         var totalHTML =  "<p> Total: <strong>" + total + "</strong></p>";
-        $("#cart-info").html(entryHTML + '<div id="cost">' + subtotalHTML + totalHTML + '</div>');
+        $("#cart-info").append('<div id="cost">' + subtotalHTML + totalHTML + '</div>');
         //console.log("cart has stuff");
     } else {
         $("#cart-info").html("Currently empty :(");
@@ -28,7 +63,6 @@ function viewCart() {
     }
     $("#cart-container").css("opacity", 1);
     $("#cart-container").css("z-index", 999);
-    //console.log("cart qty: " + cartQty + " subtotal: " + subtotal);
 }
 
 function closeCart() {
@@ -70,18 +104,22 @@ $(document).ready(function() {
         toggleStylesheet();
     })
 
-    console.log(localStorage.getItem("cartQty"));
-    if (localStorage.getItem("cartQty") > 0) {
-        cartQty = localStorage.getItem("cartQty");
-        calcCart(0);
-    }
-    $("#add-to-cart-button").on("click", function() {
-        var quantity = $("#quantity").val();
-        calcCart(quantity);
+    loadCart();
+    updateCart();
+
+    $("#add-to-cart-plant-button").on("click", function() {
+        var quantity = $("#plant-quantity").val();
+        addToCart(quantity, "Self-Watering Plant", 24.99);
+        //console.log("add to cart");
+    });
+    $("#add-to-cart-planter-button").on("click", function() {
+        var quantity = $("#planter-quantity").val();
+        addToCart(quantity, "Self-Watering Pot (Planter Only)", 14.99);
         //console.log("add to cart");
     });
 
     $("#view-cart-button").on("click", function() {
+        updateCart();
         viewCart();
         //console.log("view cart");
     });
@@ -89,11 +127,17 @@ $(document).ready(function() {
     $("#cancel-cart-button").on("click", function() {
         closeCart();
     })
-    $("#cart-container").on("click", "#remove-button", function() {
-        //console.log("remove");
-        cartQty = 0;
-        calcCart(0);
+    /*$(".remove-button").on("click", function() {
+        console.log("remove")
+        console.log(this.prev());
+    })*/
+    
+    $("#cart-container").on("click", ".remove-button", function() {
+        console.log("remove");
+        console.log($(this).attr('id'));
+        var i = $(this).attr('id');
+        cart.splice(i, 1)
+        updateCart();
         viewCart();
-        localStorage.clear();
     })
 });
