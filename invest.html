@@ -77,16 +77,13 @@
     <h3>Phase 1 - R&D</h3>
 
     <div id="phaseone">
-      <div class="vl"></div>
+      
       <ul>
 
         <li>
           <div class="point">
             Research into 3D printing techniques
-            <div class="more">
-              <br />
-              more info on the research
-            </div>
+            
           </div>
 
 
@@ -95,29 +92,20 @@
         <li>
           <div class="point">
             Research into waterproofing techniques 
-            <div class="more">
-              <br />
-              more info on the research
-            </div>
+            
         </li>
         <br />
         <li>
           <div class="point">
             Development of “self-watering” technique and its effectiveness
-            <div class="more">
-              <br />
-              more info on the research
-            </div>
+            
           </div>
         </li>
         <br />
         <li>
           <div class="point1">
             Designing the plant on Fusion
-            <div class="more1">
-              <br />
-              more info on the research
-            </div>
+            
           </div>
         </li>
       </ul>
@@ -219,32 +207,7 @@
     chart.render();
 
   </script>
-  <script>
-    $(document).ready(function () {
-      let vlheight = $(".vl").height();
-      $(".more").css("display", "none");
-      $(".more1").css("display", "none");
-      $(".point").on("click", function () {
-        if ($(this).children(".more").css("display") == "none") {
-          $(this).children(".more").css("display", "block");
-          $(".vl").css("height", vlheight += 46);
-        }
-        else {
-          $(this).children(".more").css("display", "none");
-          $(".vl").css("height", vlheight -= 46);
-        }
-      })
-      $(".point1").on("click", function () {
-        if ($(this).children(".more1").css("display") == "none") {
-          $(this).children(".more1").css("display", "block");
-        }
-        else {
-          $(this).children(".more1").css("display", "none");
-        }
-      })
-
-    })
-  </script>
+  
 </body>
 
 

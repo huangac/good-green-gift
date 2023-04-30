@@ -69,10 +69,8 @@
     padding: 40px ;
     padding-top: 0px;
 }
-#teamimgplaceholder {
-    width: 400px;
-    height: 300px;
-    background-color: beige;
+.teamimgplaceholder {
+width: 400px;
 }
 #product {
     display: flex;
@@ -95,57 +93,9 @@
     margin-bottom: 100px;
 }
 
-#marketsize{
-    width: 300%;
-    margin: 10px;
-    justify-content: center;
-}
-#bigmarket{
-    display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: end center;
-    margin: 20px;
 
-    aspect-ratio: 1 / 1 ;
-    width: 100%;
-    position: relative;
-
-    border-radius: 50%;
-    background-color: rgb(241, 255, 238);
-
-}
-#bigmarket:hover{
-    opacity: 1;
-}
-#medmarket{
-    display: grid;
-    grid-template: 1fr / 1fr;
-    place-items: end center;
-    aspect-ratio: 1 / 1 ;
-    width: 80%;
-    position: absolute;
-
-    border-radius: 50%;
-    background-color: rgb(185, 255, 201);
-
-}
-#medmarket:hover{
-    opacity: 1;
-}
-#smallmarket{
-    aspect-ratio: 1 / 1 ;
-    width: 60%;
-    position: absolute;
-
-    border-radius: 50%;
-    background-color: rgb(128, 255, 128);
-
-}
-#smallmarket:hover{
-    opacity: 1;
-}
 #marketcaption {
-    max-width: 600px;
+    max-width: 800px;
   
     padding: 40px ;
     padding-top: 0px;
