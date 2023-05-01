@@ -26,7 +26,7 @@
 #shop-info {
     margin: 0px 0px 0px 30px;
 }
-#product-image {
+.product-image {
     width: 400px;
 }
 
@@ -41,7 +41,7 @@
     z-index: 2;
 }
 .add-to-cart-button:hover {
-    background-color: ##616161;
+    background-color: #616161;
 }
 #view-cart-button {
     position: fixed;
@@ -127,7 +127,7 @@
         display: block;
         width: 600px;
     }
-    #product-image {
+    .product-image {
         width: 600px;
     }
     #shop-info {
@@ -138,7 +138,7 @@
     #shop-container {
         max-width: 400px;
     }
-    #product-image {
+    .product-image {
         max-width: 400px;
     }
 }
