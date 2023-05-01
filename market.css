@@ -8,12 +8,12 @@ body {
 }
 img {
   width: 100%;
-  height: 100%;
   position: relative;
   float: left;
   top: 0;
   left: 0;
   z-index: 0;
+  margin-bottom: 50px;
 }
 .marketmainsection {
   position: absolute;
@@ -21,5 +21,6 @@ img {
   text-align: center;
   width: 800px;
   top: 250px;
-  left: 20%;
+  left: 24%;
+  color: white;
 }
