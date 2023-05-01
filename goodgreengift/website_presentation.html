@@ -1,0 +1,376 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/cry7abk.css" />
+    </head>
+    <style>
+.container {
+    width: 100%;
+    height: 670px;
+    /* border: 1px solid red; */
+    position:relative;
+    overflow: hidden;
+}
+
+.black {
+    width: 100%;
+    height: 670px;
+    background-color:black;
+    /* display: none; */
+    position: relative;
+    z-index: -1;
+   
+
+}
+#watch{
+margin-left: 100px;
+}
+
+#plantcutoutwhiteleft{
+position: absolute;
+top: 42px;
+width: 1848px;
+height: 560px;
+left: -1900px;
+/* left: -517px; */
+/* left: -28.2%; */
+/* border: 1px solid teal; */
+/* z-index: 2; */
+/* display: none; */
+}
+
+.white {
+    width: 300px;
+    height: 506px;
+    position: absolute;
+    background-color: white;
+    display:none;
+    z-index:-1; 
+    top: 70px;
+    left: 100px;
+}
+
+.white1 {
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    display: none;
+    z-index: -1;
+
+}
+.white2 {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    display: none;
+    z-index: -1;
+}
+.title {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    left: 34%;
+    top: 300px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+.ourplant {
+    font-size: 45px;
+    position: absolute;
+    left: 45%;
+    top: 160px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.yourplant {
+    font-size: 45px;
+    position: absolute;
+    left: 45%;
+    top: 540px;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.cutoutvid {
+position: absolute;
+/* height: 73.5%; */
+height: 514.5px;
+top: 66px;
+/* left: 67.5%; */
+ /* border: 1px solid red;  */
+ right: 0px;
+
+}
+
+.midplant {
+    position: absolute;
+    width: 40%;
+    height: 72%;
+    left: 15px;
+    top: 100px;
+    display: none;
+}
+
+.cutout {
+    position: absolute;
+
+}
+
+.demovid {
+position: absolute;
+height: 85%;
+top: 25px;
+left: -400px;
+ /* border: 1px solid red;  */
+ max-height: 700px;
+}
+
+.arrowvid{
+    position: absolute;
+    height: 50%;
+    top: 210px;
+    left: 650px; 
+    display: none;
+}
+
+.videxplanation {
+    position: absolute;
+    width: 700px;
+    font-size: 25px;
+    top: 250px;
+    left: 11%;
+    display: none;
+        /* z-index: 3; */
+        font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.howdoesitwork{
+    position: absolute;
+    width: 700px;
+    font-size: 50px;
+    top: 280px;
+    left: 900px;
+    /* color: white; */
+    display: none;
+    /* z-index: 3; */
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.whyus{
+    position: absolute;
+    width: 200px;
+    font-size: 50px;
+    top: -300px;
+    /* top: 300px; */
+    left: 1050px;
+    /* color: white; */
+    /* display: none; */
+    font-family: neue-haas-grotesk-display, sans-serif;
+
+}
+.content2 {
+    position: absolute;
+    height: 46%;
+    top: 15px;
+    left: 20%;
+    display: none;
+}
+.content3 {
+    position: absolute;
+    height: 46%;
+    top: 345px;
+    left: 20%;
+    display: none;
+}
+
+.content4 {
+    position: absolute;
+    height: 46%;
+    top: 345px;
+    left: 68%;
+    display: none;
+}
+
+.content4alternate {
+    position: absolute;
+    height: 46%;
+    top: 15px;
+    left: 68%;
+    display: none;
+}
+
+
+.content5alternate {
+    position: absolute;
+    /* height: 40%; */
+    /* top: 15px; */
+    /* left: 40%; */
+    /* top: 60px; */
+    top: 700px;
+    left: 10%;
+    height: 80%;
+    /* display: none; */
+}
+
+.content3alternate {
+    position: absolute;
+    height: 40%;
+    top: 385px;
+    left: 40%;
+    display: none;
+}
+
+.getyours {
+    font-size: 48px;
+    position: absolute;
+    top: 308px;
+    left: 40.5%;
+    color: white;
+    display: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.whyustext {
+    position: absolute;
+    width: 500px;
+    font-size: 25px;
+    top: 250px;
+    left: 11%;
+    /* color: white; */
+    display: none;
+        /* z-index: 3; */
+        font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+
+    </style>
+    <body>
+<div class="container">
+
+<div class="black"></div>
+
+<div class="title">The Good Green Gift</div>
+
+
+<img id="plantcutoutwhiteleft" src="plantcutoutwhiteleftfinal.png">
+
+<video class="cutoutvid">
+    <source src="cutoutvidfinal.mp4?x=1" type="video/mp4">
+</video>
+
+<div class="ourplant">Our Plant</div>
+<div class="yourplant">Your Plant</div>
+
+
+<div class="white"></div>
+<div class="white1"></div>
+<div class="white2"></div>
+
+<img class="midplant" id="alive" src="plant1alive.png">
+<img class="midplant" id="dead" src="plant1dead.png">
+
+
+
+
+<video class="demovid">
+    <source src="demovid.mov" type="video/mp4">
+</video>
+
+<video class="arrowvid">
+    <source src="arrow.mp4" type="video/mp4">
+</video>
+
+<div class="videxplanation">Our self-watering pot is simple and foolproof. It is made up of two compartments: one to hold the plant and absorb the water, and one to collect the water and hold it over time. Just fill the tube with water once a week and let our pot do the rest!</div>
+
+<div class="howdoesitwork">How Does it Work?</div>
+
+<div class="whyus">Why Us?</div>
+<div class="whyustext">We know you have a busy life. That's why The Good Green Gift is a self-watering plant pot designed for those who don't have time. Our pot is intuitive, sturdy, customizable, and affordable, not to mention sustainably made. An investment in our pot is an investment in your mental health, as well as the environment. </div>
+
+
+<img class="content2" src="content2.png">
+<img class="content3" src="content3.jpeg">
+<img class="content4" src="content4.jpeg">
+<img class="content4alternate" src="content4alternate.png">
+<img class="content5alternate" src="content5alternate.png">
+<img class="content3alternate" src="content3alternate.png">
+
+<div class="getyours">Get Yours Today!</div>
+
+</div>
+<div id="watch">
+    <a href="#" id="watch"><img src="playbutton.png"></a>
+</div>
+    </body>
+
+    <script>
+$(document).ready(function(){
+
+    $(".cutoutvid").hide();
+    $(".content5alternate").hide();
+$("#watch").on("click", function(){
+   $("#watch").hide();
+   
+    $(document).delay(18500).queue(function(){
+        // 15 sec after start
+    
+        // $(".cutoutvid").animate({"left":"100px"},500);
+        $(".cutoutvid").hide();
+        
+    })
+
+// $(".content").delay(33500).queue(function(){
+//     $(".demovid").animate({"top":"700px","display":"none"},1000);
+// })
+
+
+    // $(".black").delay(3000).fadeIn();
+    $(".title").delay(2000).fadeIn(500).delay(3000).fadeOut();
+    $("#plantcutoutwhiteleft").delay(4000).animate({"left":"-23.6%"},1000).delay(14000).animate({"left":"-1200px"},1000).delay(2000).fadeOut();
+    $(".white").delay(4400).fadeIn(100).delay(100).animate({"left":"1200px"},700);
+    $(".white1").delay(5500).fadeIn(1).animate({"top":"0px"},1000);
+    $(".white2").delay(5500).fadeIn(1).animate({"top":"420px"},1000);
+    $(".ourplant").delay(6500).fadeIn(500).delay(12000).fadeOut();
+    $(".yourplant").delay(6600).fadeIn(500).delay(11800).fadeOut();
+    $(".cutoutvid").delay(6000).fadeIn(100).queue(function(){
+        $(this).trigger("play").delay(2000).fadeOut();
+        $(".arrowvid").delay(500).fadeIn().delay(12000).fadeOut();
+         $(".arrowvid").trigger("play").delay(1000).queue(function(){
+            $(".cutoutvid").fadeOut();
+            
+           })     
+
+        $(".demovid").delay(16000).animate({"left":"1000px"},1000);
+        $(".demovid").queue(function(){
+            $(this).trigger("play");
+            $(this).delay(11400).animate({"top":"700px"},700);
+            
+        })     
+        $(".videxplanation").delay(16500).fadeIn().delay(11400).fadeOut();
+    // $(".cutoutvid").delay(500).queue(function(){
+
+    // })
+ })     
+// $(".demovid").delay(33500).animate({"top":"700px"},700);
+$(".howdoesitwork").delay(20000).fadeIn().delay(2000).fadeOut();
+$("#alive").delay(7000).fadeIn().delay(6000).fadeOut();
+$("#dead").delay(13500).fadeIn().delay(5000).fadeOut();
+$(".whyus").delay(33500).animate({"top":"300px"},1000).delay(1500).fadeOut();
+$(".content5alternate").delay(33500).fadeIn().animate({"top":"60px"},700).delay(1500).animate({"left":"50%"},500);
+$(".whyustext").delay(35000).fadeIn();
+// $(".content5alternate").delay(33500).queue(function(){
+// $(this).fadeIn(1000).animate({"top":"60px"},1000);
+
+// })
+
+
+
+})
+})
+    </script>
+</html>
