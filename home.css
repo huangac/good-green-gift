@@ -108,7 +108,15 @@ width: 400px;
     max-width: 800px;
     margin: auto;
     margin-bottom: 100px;
+    flex-direction: column;
     
+}
+#investcaption {
+    max-width: 800px;
+    margin: 20px;
+    padding: 40px ;
+    padding-top: 0px;
+    justify-content: right;
 }
 a{
     color: black;
@@ -120,4 +128,13 @@ a{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    #team{
+        flex-direction: column;
+    }
+    #product{
+        flex-direction: column;
+    }
 }
