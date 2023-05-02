@@ -13,7 +13,7 @@ link[9] = "What makes our packaging so convenient?"; site[9] = "All you have to 
 link[10] = "How can you personalize your pot?"; site[10] = "We will soon be coming out with a painting set alongside our pots so that people can paint and personalize their pots.";
 link[11] = "How did we come up with the design?"; site[11] = "Our team did a lot of research on the development of “self-watering” technique and its effectiveness, the waterproofing techniques, and also into the 3-D printing techniques.";
 link[12] = "What is our mission?"; site[12] = "Our mission is to provide our customers with the 'gift of life' through our innovative 3D printed self-watering pots and indoor plant kit, creating meaningful gift-giving experiences that live beyond the moment.";
-link[13] = "What do our customers say about us?"; site[13] = "Notion";
+link[13] = "What do our customers say about us?"; site[13] = "Some customer testimonials: 'The good green gift is such an innovative product'  'I love how I only need to water my plant once a month'  'I got this for my sister because she likes plants but I know she isn't a green thumb'";
 link[14] = "What market are we exploring?"; site[14] = "The household plant and gift-giving industry is a rapidly growing market, with an estimated value of over $22 billion in 2020. This industry is driven by a growing interest in houseplants and their associated health and wellness benefits, as well as an increasing desire for unique and meaningful gift-giving experiences.";
 
 let code = "";
