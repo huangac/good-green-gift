@@ -55,12 +55,13 @@
   #phasetwo{
     z-index: 2;
   }
-  .point{
-
-  }
-  .more{
-
-  }
-
+  @media screen and (max-width: 700px) {
+    #whynow{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+}
 
 
