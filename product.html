@@ -2,7 +2,7 @@
     <head>
         <title>Product</title>
         <link href="style-light.css" rel="stylesheet">
-        <link href="product test.css" rel="stylesheet">
+        <link href="product.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/cry7abk.css">
         <script src="http://code.jquery.com/jquery.js"></script>
     </head>
@@ -117,6 +117,18 @@
                 
             
                 <script>
+
+
+const screenWidth= window.innerWidth;
+let slideDistance;
+if (screenWidth <= 1600) {
+slideDistance = '-23.6%' ;
+} else {
+    slideDistance = '-11.2%';
+}
+
+
+
             document.querySelector("#watch").addEventListener("click",function(){
                 setTimeout(function(){
                 document.getElementById("soundcut1").play();
@@ -157,7 +169,7 @@
                $("#watch").hide();
                $(".motiongraphic").trigger("play").delay(10000).fadeOut();
                 
-               $(document).delay(62000).queue(function(){
+               $(document).delay(61000).queue(function(){
                 location.reload(true);
                })
                
@@ -187,7 +199,7 @@
             
                 $(".black").delay(6000).fadeOut();
                 $(".title").delay(2000).fadeIn(500).delay(3000).fadeOut();
-                $("#plantcutoutwhiteleft").delay(4000).animate({"left":"-23.6%"},1000).delay(14000).animate({"left":"-76%"},1000).delay(2300).fadeOut().animate({"left":"-1900px"});
+                $("#plantcutoutwhiteleft").delay(4000).animate({"left": slideDistance},1000).delay(14000).animate({"left":"-76%"},1000).delay(2300).fadeOut().animate({"left":"-1900px"});
                 $(".white").delay(4400).fadeIn(100).delay(100).animate({"left":"1200px"},700).delay(2000).fadeOut().animate({"left":"100px"});
                 $(".white1").delay(5500).fadeIn(1).animate({"top":"0px"},1000).delay(4000).fadeOut().animate({"top":"100px"});
                 $(".white2").delay(5600).fadeIn(1).animate({"top":"420px"},1000).delay(4000).fadeOut().animate({"top":"250px"});

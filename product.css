@@ -31,7 +31,7 @@ top: 42px;
 width: 1848px;
 height: 560px;
 left: -1900px;
-/* left: -517px; */
+/* left: -354px; */
 /* left: -28.2%; */
 /* border: 1px solid teal; */
 z-index: 2;
@@ -139,7 +139,7 @@ left: -400px;
     position: absolute;
     height: 50%;
     top: 180px;
-    left: 650px; 
+    left: 43%; 
     display: none;
     z-index: 5;
 }
